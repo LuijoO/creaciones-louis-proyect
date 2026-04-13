@@ -2,14 +2,14 @@ import React from 'react';
 
 export default function Features({ title, items, onOpenContact }) {
   return (
-    <section className="py-24 bg-[#D4AF37] px-4 font-['Josefin_Sans',sans-serif]">
+    <section className="py-16 md:py-24 bg-[#D4AF37] px-6 font-['Josefin_Sans',sans-serif]">
       <div className="max-w-6xl mx-auto text-center">
-        <h3 className="text-4xl md:text-5xl font-light text-center mb-16 text-[#FFFFF0] tracking-[0.2em] uppercase">
+        <h3 className="text-3xl md:text-5xl font-light text-center mb-12 md:mb-16 text-[#FFFFF0] tracking-[0.2em] uppercase">
           {title}
         </h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 text-center">
           {items.map((feature) => (
-            <div key={feature.id} className="group relative p-10 rounded-2xl bg-[#FFFFF0] shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 border border-transparent overflow-hidden z-10 cursor-default">
+            <div key={feature.id} className="group relative p-8 md:p-10 rounded-2xl bg-[#FFFFF0] shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 border border-transparent overflow-hidden z-10 cursor-default">
               {/* Fondo decorativo sutil al hacer hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
               

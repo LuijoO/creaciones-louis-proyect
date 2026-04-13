@@ -5,26 +5,26 @@ export default function Underwear({ title, tabs, collections }) {
   const [activeTab, setActiveTab] = useState(null);
 
   return (
-    <section className="py-24 bg-[#FFFFF0] px-4 font-['Josefin_Sans',sans-serif]">
+    <section className="py-16 md:py-24 bg-[#FFFFF0] px-6 font-['Josefin_Sans',sans-serif]">
       <div className="max-w-6xl mx-auto">
-        <h3 className="text-4xl md:text-5xl font-light text-center mb-6 text-[#D4AF37] tracking-[0.2em] uppercase">
+        <h3 className="text-3xl md:text-5xl font-light text-center mb-6 text-[#D4AF37] tracking-[0.2em] uppercase">
           {title}
         </h3>
-        <div className="w-24 h-px bg-[#D4AF37]/50 mx-auto mb-16"></div>
+        <div className="w-24 h-px bg-[#D4AF37]/50 mx-auto mb-12 md:mb-16"></div>
 
         {/* Las 2 Cards Primarias (Tabs) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12 md:mb-16">
           {tabs.map((tab) => (
             <div 
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`cursor-pointer border transition-all duration-500 p-12 text-center rounded-xl ${
+              className={`cursor-pointer border transition-all duration-500 p-8 md:p-12 text-center rounded-xl ${
                 activeTab === tab.id 
                   ? 'bg-[#D4AF37] border-[#D4AF37] text-[#FFFFF0] shadow-2xl scale-105' 
                   : 'bg-transparent border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37]/10'
               }`}
             >
-              <h4 className="text-3xl font-light tracking-[0.2em] uppercase">{tab.label}</h4>
+              <h4 className="text-2xl md:text-3xl font-light tracking-[0.2em] uppercase">{tab.label}</h4>
               <p className={`mt-4 text-sm tracking-widest uppercase ${activeTab === tab.id ? 'text-[#FFFFF0]/80' : 'text-[#B8860B]'}`}>Explorar Colección</p>
             </div>
           ))}

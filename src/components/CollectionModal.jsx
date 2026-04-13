@@ -16,10 +16,10 @@ export default function CollectionModal({ isOpen, onClose, data }) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Cabecera pegajosa del modal */}
-        <div className="flex-none p-8 md:px-12 border-b border-[#D4AF37]/20 relative bg-[#FFFFF0] z-20">
+        <div className="flex-none p-6 md:p-8 md:px-12 border-b border-[#D4AF37]/20 relative bg-[#FFFFF0] z-20">
           <button 
             onClick={onClose}
-            className="absolute top-8 right-8 text-[#D4AF37]/70 hover:text-[#D4AF37] transition-colors"
+            className="absolute top-6 right-6 md:top-8 md:right-8 text-[#D4AF37]/70 hover:text-[#D4AF37] transition-colors"
             aria-label="Cerrar"
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
@@ -27,10 +27,10 @@ export default function CollectionModal({ isOpen, onClose, data }) {
             </svg>
           </button>
           
-          <h3 className="text-3xl md:text-5xl font-light tracking-[0.2em] uppercase text-center mb-8">{data.title}</h3>
+          <h3 className="text-2xl md:text-5xl font-light tracking-[0.2em] uppercase text-center mb-6 md:mb-8 pr-6">{data.title}</h3>
           
           {/* Pestañas de navegación */}
-          <div className="flex justify-center flex-wrap gap-4 md:gap-12">
+          <div className="flex justify-start md:justify-center overflow-x-auto whitespace-nowrap gap-6 md:gap-12 pb-2" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
             {data.tabs.map((tab) => (
               <button
                 key={tab.id}
@@ -48,7 +48,7 @@ export default function CollectionModal({ isOpen, onClose, data }) {
         </div>
 
         {/* Cuerpo del modal con Scroll (Las 4 Cards detalladas) */}
-        <div className="flex-1 overflow-y-auto p-8 md:p-12 bg-[#FFFFF0]/50">
+        <div className="flex-1 overflow-y-auto p-6 md:p-12 bg-[#FFFFF0]/50">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 animate-[fade-in-up_0.6s_ease-out_forwards]">
             {data.collections[activeTab]?.map((item) => (
               <div key={item.id} className="group flex flex-col bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-[#D4AF37]/10">

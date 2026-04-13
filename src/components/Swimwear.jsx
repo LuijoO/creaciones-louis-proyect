@@ -2,18 +2,18 @@ import React from 'react';
 
 export default function Swimwear({ title, items, ctaText }) {
   return (
-    <section className="py-24 bg-white px-4 font-['Josefin_Sans',sans-serif]">
+    <section className="py-16 md:py-24 bg-white px-6 font-['Josefin_Sans',sans-serif]">
       <div className="max-w-6xl mx-auto">
         {/* Título de la sección */}
-        <h3 className="text-4xl md:text-5xl font-light text-center mb-6 text-[#D4AF37] tracking-[0.2em] uppercase">
+        <h3 className="text-3xl md:text-5xl font-light text-center mb-6 text-[#D4AF37] tracking-[0.2em] uppercase">
           {title}
         </h3>
         
         {/* Línea de separación principal */}
-        <div className="w-24 h-px bg-[#D4AF37]/50 mx-auto mb-20"></div>
+        <div className="w-24 h-px bg-[#D4AF37]/50 mx-auto mb-12 md:mb-20"></div>
 
         {/* Contenedor de las Cards (2 Columnas) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 mb-16">
           {items.map((item) => (
             <div key={item.id} className="group cursor-pointer">
               {/* Imagen con efecto hover */}

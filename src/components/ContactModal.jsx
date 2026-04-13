@@ -9,13 +9,13 @@ export default function ContactModal({ isOpen, onClose }) {
       onClick={onClose} // Cierra el modal al hacer clic en el fondo
     >
       <div 
-        className="bg-[#D4AF37] text-[#FFFFF0] rounded-2xl shadow-2xl p-12 max-w-lg w-full relative font-['Josefin_Sans',sans-serif] overflow-hidden"
+        className="bg-[#D4AF37] text-[#FFFFF0] rounded-2xl shadow-2xl p-8 md:p-12 max-w-lg w-full relative font-['Josefin_Sans',sans-serif] overflow-hidden"
         onClick={(e) => e.stopPropagation()} // Evita que el modal se cierre al hacer clic dentro de él
       >
         {/* Botón para cerrar el modal */}
         <button 
           onClick={onClose}
-          className="absolute top-4 right-4 text-[#FFFFF0]/70 hover:text-[#FFFFF0] transition-colors z-20"
+          className="absolute top-4 right-4 md:top-6 md:right-6 text-[#FFFFF0]/70 hover:text-[#FFFFF0] transition-colors z-20"
           aria-label="Cerrar modal"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-7 h-7">
@@ -23,28 +23,28 @@ export default function ContactModal({ isOpen, onClose }) {
           </svg>
         </button>
 
-        <h4 className="text-4xl font-light tracking-widest mb-10 text-left relative z-10">Contáctanos</h4>
+        <h4 className="text-3xl md:text-4xl font-light tracking-widest mb-8 md:mb-10 text-left relative z-10 pr-6">Contáctanos</h4>
         
-        <div className="space-y-8 text-left relative z-10">
+        <div className="space-y-6 md:space-y-8 text-left relative z-10">
           <div>
             <p className="text-lg font-bold uppercase tracking-widest text-[#FFFFF0]">Nombre</p>
             <div className="w-20 h-px bg-[#FFFFF0]/50 my-2"></div>
-            <p className="text-xl font-light">Louis C.</p>
+            <p className="text-lg md:text-xl font-light">Louis C.</p>
           </div>
           <div>
             <p className="text-lg font-bold uppercase tracking-widest text-[#FFFFF0]">Dirección</p>
             <div className="w-20 h-px bg-[#FFFFF0]/50 my-2"></div>
-            <p className="text-xl font-light">123 Av. de la Elegancia, Ciudad Glamour</p>
+            <p className="text-lg md:text-xl font-light">123 Av. de la Elegancia, Ciudad Glamour</p>
           </div>
           <div>
             <p className="text-lg font-bold uppercase tracking-widest text-[#FFFFF0]">Correo</p>
             <div className="w-20 h-px bg-[#FFFFF0]/50 my-2"></div>
-            <a href="mailto:contacto@louiscreation.com" className="text-xl font-light underline hover:opacity-80 transition-opacity">contacto@louiscreation.com</a>
+            <a href="mailto:contacto@louiscreation.com" className="text-lg md:text-xl font-light underline hover:opacity-80 transition-opacity break-all">contacto@louiscreation.com</a>
           </div>
           <div>
             <p className="text-lg font-bold uppercase tracking-widest text-[#FFFFF0]">Teléfono</p>
             <div className="w-20 h-px bg-[#FFFFF0]/50 my-2"></div>
-            <a href="tel:+15551234567" className="text-xl font-light underline hover:opacity-80 transition-opacity">+1 (555) 123-4567</a>
+            <a href="tel:+15551234567" className="text-lg md:text-xl font-light underline hover:opacity-80 transition-opacity">+1 (555) 123-4567</a>
           </div>
           
           {/* Social Icons */}
