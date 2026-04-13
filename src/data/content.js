@@ -78,6 +78,34 @@ export const landingContent = {
       ]
     }
   },
+  collectionModal: {
+    title: "Colección Exclusiva",
+    tabs: [
+      { id: 'completos', label: 'Completos' },
+      { id: 'partes', label: 'En Partes' },
+      { id: 'accesorios', label: 'Accesorios' }
+    ],
+    collections: {
+      completos: [
+        { id: 'c1', title: 'Enterizo Mónaco', description: 'Diseño clásico con escote profundo y tejido modelador.', price: '$120', features: ['Protección UV 50+', 'Copas removibles', 'Doble forro'], image: swim1 },
+        { id: 'c2', title: 'Body Saint-Tropez', description: 'Elegancia asimétrica con un solo hombro y detalle dorado.', price: '$135', features: ['Ajuste perfecto', 'Secado rápido', 'Detalles inoxidables'], image: swim2 },
+        { id: 'c3', title: 'Bañador Capri', description: 'Estilo vintage con cinturón incorporado para enmarcar la figura.', price: '$140', features: ['Tejido texturizado', 'Soporte medio', 'Efecto reductor'], image: w3 },
+        { id: 'c4', title: 'Traje Ibiza', description: 'Minimalismo puro con espalda descubierta y tirantes finos.', price: '$110', features: ['Corte alto en pierna', 'Sin costuras', 'Ultra suave'], image: w1 }
+      ],
+      partes: [
+        { id: 'p1', title: 'Bikini Cannes', description: 'Top triangular con aros y braga de talle alto clásico.', price: '$115', features: ['Soporte extra', 'Tirantes ajustables', 'Tejido premium'], image: w2 },
+        { id: 'p2', title: 'Conjunto Amalfi', description: 'Estilo bandeau con textura acanalada y diseño sin tirantes.', price: '$105', features: ['Antideslizante', 'Forro completo', 'Cobertura media'], image: swim2 },
+        { id: 'p3', title: 'Dos piezas Tulum', description: 'Corte balconette con detalle de nudo central y braga brasileña.', price: '$125', features: ['Relleno ligero', 'Detalle frontal', 'Corte bajo'], image: w4 },
+        { id: 'p4', title: 'Bikini Santorini', description: 'Top tipo sujetador y braga con lazos laterales ajustables.', price: '$95', features: ['Máxima comodidad', 'Ajuste a medida', 'Resistente al cloro'], image: w1 }
+      ],
+      accesorios: [
+        { id: 'a1', title: 'Pareo de Seda', description: 'El complemento perfecto para tu traje de baño, suave y ligero.', price: '$85', features: ['100% Seda natural', 'Estampado exclusivo', 'Múltiples usos'], image: m2 },
+        { id: 'a2', title: 'Sombrero Panamá', description: 'Protección con estilo, tejido a mano con palma de iraca.', price: '$150', features: ['Artesanal', 'Ala ancha', 'Cinta dorada'], image: w3 },
+        { id: 'a3', title: 'Bolso de Playa', description: 'Espacioso y elegante bolso tejido, ideal para tus días soleados.', price: '$110', features: ['Asas de cuero', 'Forro interior', 'Bolsillo secreto'], image: swim1 },
+        { id: 'a4', title: 'Gafas Oversize', description: 'Diseño carey con montura grande y lentes polarizadas.', price: '$195', features: ['Polarizadas', 'Protección 100% UV', 'Estuche rígido'], image: m4 }
+      ]
+    }
+  },
   footer: {
     companyName: "Louis Creation",
   },

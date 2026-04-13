@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Hero({ title, subtitle, ctaText, note }) {
+export default function Hero({ title, subtitle, ctaText, note, onOpenCollection }) {
   return (
     <section className="py-32 text-center px-4 bg-[#FFFFF0] font-['Champagne_&_Limousines','Josefin_Sans',sans-serif]">
       {/* Definimos la animación directamente en el componente para que funcione el efecto de entrada */}
@@ -24,7 +24,7 @@ export default function Hero({ title, subtitle, ctaText, note }) {
         <p className="text-xl md:text-2xl text-[#B8860B] mb-12 max-w-3xl mx-auto font-light tracking-wide leading-relaxed opacity-0 [animation:fade-in-up_1s_ease-out_0.6s_forwards]">
           {subtitle}
         </p>
-        <button className="border border-[#D4AF37] text-[#D4AF37] px-10 py-4 text-lg tracking-[0.2em] uppercase hover:bg-[#D4AF37] hover:text-[#FFFFF0] transition-colors duration-500 opacity-0 [animation:fade-in-up_1s_ease-out_0.8s_forwards]">
+        <button onClick={onOpenCollection} className="border border-[#D4AF37] text-[#D4AF37] px-10 py-4 text-lg tracking-[0.2em] uppercase hover:bg-[#D4AF37] hover:text-[#FFFFF0] transition-colors duration-500 opacity-0 [animation:fade-in-up_1s_ease-out_0.8s_forwards]">
           {ctaText}
         </button>
         <p className="mt-8 text-sm text-[#D4AF37] tracking-widest uppercase opacity-0 [animation:fade-in-up_1s_ease-out_1s_forwards]">
