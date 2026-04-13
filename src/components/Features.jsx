@@ -13,7 +13,10 @@ export default function Features({ title, items }) {
               {/* Fondo decorativo sutil al hacer hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
               
-              <div className="text-5xl mb-6 transform group-hover:scale-125 group-hover:-translate-y-2 transition-all duration-500 inline-block">{feature.icon}</div>
+              <div 
+                className="text-[#D4AF37] mb-6 transform group-hover:scale-125 group-hover:-translate-y-2 transition-all duration-500 flex justify-center"
+                dangerouslySetInnerHTML={{ __html: feature.icon }}
+              ></div>
               <h4 className="text-2xl font-light mb-4 text-[#D4AF37] tracking-widest uppercase group-hover:text-[#B8860B] transition-colors duration-500">{feature.title}</h4>
               <div className="w-12 h-px bg-[#D4AF37]/30 mx-auto mb-6 group-hover:w-24 group-hover:bg-[#D4AF37]/60 transition-all duration-700"></div>
               <p className="text-[#B8860B] font-light tracking-wide leading-relaxed">{feature.description}</p>
