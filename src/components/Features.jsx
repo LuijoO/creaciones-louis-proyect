@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Features({ title, items }) {
+export default function Features({ title, items, onOpenContact }) {
   return (
     <section className="py-24 bg-[#D4AF37] px-4 font-['Josefin_Sans',sans-serif]">
       <div className="max-w-6xl mx-auto text-center">
@@ -26,7 +26,10 @@ export default function Features({ title, items }) {
 
         {/* Botón de llamada a la acción */}
         <div className="mt-20">
-          <button className="bg-transparent text-[#FFFFF0] border border-[#FFFFF0] px-12 py-4 text-lg tracking-[0.2em] uppercase hover:bg-[#FFFFF0] hover:text-[#D4AF37] transition-all duration-500 hover:shadow-lg font-bold cursor-pointer">
+          <button 
+            onClick={onOpenContact}
+            className="bg-transparent text-[#FFFFF0] border border-[#FFFFF0] px-12 py-4 text-lg tracking-[0.2em] uppercase hover:bg-[#FFFFF0] hover:text-[#D4AF37] transition-all duration-500 hover:shadow-lg font-bold cursor-pointer"
+          >
             Solicita tu pedido
           </button>
         </div>
